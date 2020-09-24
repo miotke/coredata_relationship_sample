@@ -19,6 +19,7 @@
 		4C58034E251AF44100CBB474 /* Component+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58034A251AF44100CBB474 /* Component+CoreDataProperties.swift */; };
 		4C580353251AF4A700CBB474 /* AddComputerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C580352251AF4A700CBB474 /* AddComputerView.swift */; };
 		4C580356251AF4B500CBB474 /* AddComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C580355251AF4B500CBB474 /* AddComponentView.swift */; };
+		4C8BCFF3251C30AC00F27390 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BCFF2251C30AC00F27390 /* ContentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4C58034A251AF44100CBB474 /* Component+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Component+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		4C580352251AF4A700CBB474 /* AddComputerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComputerView.swift; sourceTree = "<group>"; };
 		4C580355251AF4B500CBB474 /* AddComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComponentView.swift; sourceTree = "<group>"; };
+		4C8BCFF2251C30AC00F27390 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				4C580343251AF2D600CBB474 /* ContentView.swift */,
 				4C580352251AF4A700CBB474 /* AddComputerView.swift */,
 				4C580355251AF4B500CBB474 /* AddComponentView.swift */,
+				4C8BCFF2251C30AC00F27390 /* ContentCell.swift */,
 				4C580332251AF2A600CBB474 /* Assets.xcassets */,
 				4C58033C251AF2A600CBB474 /* Info.plist */,
 				4C580334251AF2A600CBB474 /* Preview Content */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C58033B251AF2A600CBB474 /* coredata_sample.xcdatamodeld in Sources */,
+				4C8BCFF3251C30AC00F27390 /* ContentCell.swift in Sources */,
 				4C58034B251AF44100CBB474 /* Computer+CoreDataClass.swift in Sources */,
 				4C580353251AF4A700CBB474 /* AddComputerView.swift in Sources */,
 				4C580338251AF2A600CBB474 /* Persistence.swift in Sources */,

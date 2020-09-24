@@ -12,26 +12,11 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: []) private var computers: FetchedResults<Computer>
 
     @State private var showAddComputerView = false
-    @State private var showAddComponentView = false
     
     var body: some View {
         NavigationView {
             VStack {
-                TabView {
-                    ForEach(computers, id:\.self) { computer in
-                        VStack {
-                            Text(computer.wrappedComputerName )
-                                .font(.title)
-                            
-                            List {
-                                ForEach(computer.serviceArray, id:\.self) { component in
-                                    Text("\(component.wrappedComponentName) for \(computer.wrappedComputerName) computer")
-                                }
-                            }
-                        }
-                    }
-                }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                ContentCell()
                 .padding(.top, 15)
                 .navigationBarTitle(Text("CoreData Sample"))
                 
@@ -49,11 +34,7 @@ struct ContentView: View {
                 AddComputerView(isPresented: $showAddComputerView)
             })
             
-            Button("Add Component") {
-                showAddComponentView.toggle()
-            }.sheet(isPresented: $showAddComponentView, content: {
-                AddComponentView(isPresented: $showAddComponentView)
-            })
+
         }
     }
 }

@@ -11,12 +11,19 @@ struct AddComponentView: View {
     
     @Binding var isPresented: Bool
     
+    let computerData: Computer
+    
     @Environment(\.managedObjectContext) private var viewContext
     
     @State private var componentName = ""
     
     var body: some View {
         VStack {
+            
+            Text("Targeting \(computerData.wrappedComputerName)")
+                .font(.title2)
+                .foregroundColor(.blue)
+            
             Form {
                 TextField("Component name:", text: $componentName)
             }
@@ -40,9 +47,9 @@ struct AddComponentView: View {
     }
 }
 
-struct AddComponentView_Previews: PreviewProvider {
-    @State static var isPresented = true
-    static var previews: some View {
-        AddComponentView(isPresented: $isPresented)
-    }
-}
+//struct AddComponentView_Previews: PreviewProvider {
+//    @State static var isPresented = true
+//    static var previews: some View {
+//        AddComponentView(isPresented: $isPresented)
+//    }
+//}
