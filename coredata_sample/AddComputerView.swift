@@ -32,6 +32,7 @@ struct AddComputerView: View {
     func saveComputer() {
         let computer = Computer(context: viewContext)
         
+        computer.identifier = UUID()
         computer.computerName = self.computerName
         
         try? viewContext.save()

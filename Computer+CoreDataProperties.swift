@@ -16,7 +16,7 @@ extension Computer {
         return NSFetchRequest<Computer>(entityName: "Computer")
     }
 
-    @NSManaged public var id: UUID?
+    @NSManaged public var identifier: UUID?
     @NSManaged public var computerName: String?
     @NSManaged public var component: NSSet?
 

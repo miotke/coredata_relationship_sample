@@ -6,11 +6,11 @@
     </entity>
     <entity name="Computer" representedClassName="Computer" syncable="YES">
         <attribute name="computerName" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="identifier" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="component" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Component" inverseName="origin" inverseEntity="Component"/>
     </entity>
     <elements>
-        <element name="Computer" positionX="-63" positionY="-18" width="128" height="88"/>
         <element name="Component" positionX="-54" positionY="-9" width="128" height="73"/>
+        <element name="Computer" positionX="-63" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

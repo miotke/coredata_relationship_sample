@@ -75,7 +75,6 @@
 				4C580355251AF4B500CBB474 /* AddComponentView.swift */,
 				4C580332251AF2A600CBB474 /* Assets.xcassets */,
 				4C58033C251AF2A600CBB474 /* Info.plist */,
-				4C580339251AF2A600CBB474 /* coredata_sample.xcdatamodeld */,
 				4C580334251AF2A600CBB474 /* Preview Content */,
 			);
 			path = coredata_sample;
@@ -92,6 +91,7 @@
 		4C580346251AF42F00CBB474 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				4C580339251AF2A600CBB474 /* coredata_sample.xcdatamodeld */,
 				4C580337251AF2A600CBB474 /* Persistence.swift */,
 				4C580347251AF44100CBB474 /* Computer+CoreDataClass.swift */,
 				4C580348251AF44100CBB474 /* Computer+CoreDataProperties.swift */,

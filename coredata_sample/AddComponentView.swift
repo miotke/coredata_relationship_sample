@@ -30,10 +30,13 @@ struct AddComponentView: View {
     
     func saveComponent() {
         let component = Component(context: viewContext)
+        let computer = Computer(context: viewContext)
         
         component.componentName = self.componentName
+        component.origin = computer
         
         try? viewContext.save()
+        print("🚒 Documents Directory: ", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found!")
     }
 }
 

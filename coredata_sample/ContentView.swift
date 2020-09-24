@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @FetchRequest(sortDescriptors: []) private var computers: FetchedResults<Computer>
-    @FetchRequest(sortDescriptors: []) private var components: FetchedResults<Component>
-    
+
     @State private var showAddComputerView = false
     @State private var showAddComponentView = false
     
@@ -21,11 +20,11 @@ struct ContentView: View {
                 TabView {
                     ForEach(computers, id:\.self) { computer in
                         VStack {
-                            Text(computer.computerName!)
+                            Text(computer.wrappedComputerName )
                                 .font(.title)
                             
                             List {
-                                ForEach(components, id:\.self) { component in
+                                ForEach(computer.serviceArray, id:\.self) { component in
                                     Text("\(component.wrappedComponentName) for \(computer.wrappedComputerName) computer")
                                 }
                             }
